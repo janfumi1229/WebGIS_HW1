@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Travel notes, academic &amp; experience, and reading notes by Jen-Fu Huang.">
+  <meta name="theme-color" content="#FDFBF6">
+  <title>Articles · Jen-Fu Huang</title>
+  <link rel="icon" href="img/brand/logo.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Noto+Serif+TC:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- EXTERNAL CSS (same stylesheet as every other page) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Top bar (identical on every page) ===== -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="img/brand/logo.png" alt="Jen-Fu Huang brand logo" width="40" height="40">
+        <span>Jen-Fu Huang</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articles.html" aria-current="page">Articles</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <div class="page-head">
+      <h1>Articles</h1>
+      <p>Travel notes, academic &amp; experience, and reading notes.</p>
+      <div class="page-head__rule" aria-hidden="true"></div>
+    </div>
+
+    <!-- Category chips: js/articles.js reads data-category and filters the blocks -->
+    <ul class="chips" aria-label="Filter articles by category">
+      <li><button type="button" class="chip" data-category="All" aria-pressed="true">All</button></li>
+      <li><button type="button" class="chip" data-category="Travel notes" aria-pressed="false">Travel notes</button></li>
+      <li><button type="button" class="chip" data-category="Academic &amp; Experience" aria-pressed="false">Academic &amp; Experience</button></li>
+      <li><button type="button" class="chip" data-category="Reading Note" aria-pressed="false">Reading Note</button></li>
+    </ul>
+    <p class="articles__status" id="articles-status" aria-live="polite">Loading articles…</p>
+
+    <!-- The blocks are built by js/articles.js: 1 per row on phones, 2 on tablets, 3 on desktop -->
+    <ul class="card-list" id="article-list"></ul>
+    <noscript><p class="state-box">Articles need JavaScript. Please turn it on to see the list.</p></noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>© 2026 Jen-Fu Huang · <a href="https://www.linkedin.com/in/jen-fu-huang-b87208310/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+      <p>Built with AI assistance; see my report for the disclosure.</p>
+    </div>
+  </footer>
+
+  <script src="js/articles.js"></script>
+</body>
+</html>

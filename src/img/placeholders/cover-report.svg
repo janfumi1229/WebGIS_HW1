@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Light placeholder cover for a report">
+  <!-- TODO: replace with a real figure or photo, e.g. img/articles/<id>/cover.jpg -->
+  <rect width="1600" height="900" fill="#F5EFE3"/>
+  <g fill="none" stroke="#DCC9A5" stroke-width="2">
+    <path d="M200 700 H1400 M200 560 H1400 M200 420 H1400 M200 280 H1400"/>
+  </g>
+  <g>
+    <rect x="320" y="520" width="140" height="180" fill="#B7D3E0"/>
+    <rect x="560" y="400" width="140" height="300" fill="#B5D8C3"/>
+    <rect x="800" y="320" width="140" height="380" fill="#B7D3E0"/>
+    <rect x="1040" y="450" width="140" height="250" fill="#B5D8C3"/>
+  </g>
+  <text x="800" y="800" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#72685E">Report cover placeholder</text>
+</svg>

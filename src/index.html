@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsive design starts here: the page width follows the device width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website of Jen-Fu Huang, Geography student at National Taiwan University: resume, travel notes, academic &amp; experience, and reading notes.">
+  <meta name="theme-color" content="#FDFBF6">
+  <title>Jen-Fu Huang · Geography, National Taiwan University</title>
+  <link rel="icon" href="img/brand/logo.png" type="image/png">
+
+  <!-- Google Fonts: Playfair Display (headings), Lora (Latin text), Noto Serif TC (Chinese text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Noto+Serif+TC:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- EXTERNAL CSS demo: the main stylesheet lives in its own file -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- INTERNAL CSS demo: a <style> block inside <head>. It only affects this page,
+       and it comes AFTER style.css, so it wins when both set the same thing. -->
+  <style>
+    /* Put a small dot between the hero links (LinkedIn · Email) */
+    .hero__links li + li::before {
+      content: "·";
+      margin: 0 0.7rem;
+      color: var(--tan);
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Top bar (identical on every page) ===== -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="img/brand/logo.png" alt="Jen-Fu Huang brand logo" width="40" height="40">
+        <span>Jen-Fu Huang</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="articles.html">Articles</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== Hero: text on the left, portrait on the right ===== -->
+    <div class="hero-band">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Geography · National Taiwan University</p>
+          <h1 class="hero__title" id="hero-title">Jen-Fu Huang</h1>
+
+          <!-- INLINE CSS demo: the style="" attribute below styles only this one paragraph.
+               Inline CSS has the highest priority (it beats internal and external CSS). -->
+          <p class="hero__tagline" style="letter-spacing: 0.02em;">Geography student · President of NTU Climate Action Club · Traveler &amp; writer</p>
+
+          <!-- Brief self-introduction (requirement 2). Only facts from my own notes. -->
+          <p class="hero__intro">
+            I am a senior (4th year) in the Department of Geography at National Taiwan University, with a minor in Forestry.
+            I lead the NTU Climate Action Club and take part in environmental research, from fisheries-waste governance at fishing ports in eastern Taiwan to spatial ecology.
+          </p>
+
+          <!-- Countries I have visited, shown as flag images (emoji flags do not render on Windows) -->
+          <ul class="flags" aria-label="Countries and regions I have visited">
+            <li><img src="img/flags/tw.svg" alt="Taiwan" title="Taiwan" width="36" height="24"></li>
+            <li><img src="img/flags/jp.svg" alt="Japan" title="Japan" width="36" height="24"></li>
+            <li><img src="img/flags/cn.svg" alt="China" title="China" width="36" height="24"></li>
+            <li><img src="img/flags/kr.svg" alt="South Korea" title="South Korea" width="36" height="24"></li>
+            <li><img src="img/flags/sg.svg" alt="Singapore" title="Singapore" width="36" height="24"></li>
+            <li><img src="img/flags/my.svg" alt="Malaysia" title="Malaysia" width="36" height="24"></li>
+            <li><img src="img/flags/id.svg" alt="Indonesia" title="Indonesia" width="36" height="24"></li>
+            <li><img src="img/flags/vn.svg" alt="Vietnam" title="Vietnam" width="36" height="24"></li>
+            <li><img src="img/flags/th.svg" alt="Thailand" title="Thailand" width="36" height="24"></li>
+            <li><img src="img/flags/in.svg" alt="India" title="India" width="36" height="24"></li>
+            <li><img src="img/flags/np.svg" alt="Nepal" title="Nepal" width="36" height="24"></li>
+            <li><img src="img/flags/hk.svg" alt="Hong Kong" title="Hong Kong" width="36" height="24"></li>
+            <li><img src="img/flags/us.svg" alt="United States" title="United States" width="36" height="24"></li>
+            <li><img src="img/flags/ca.svg" alt="Canada" title="Canada" width="36" height="24"></li>
+            <li><img src="img/flags/au.svg" alt="Australia" title="Australia" width="36" height="24"></li>
+            <li><img src="img/flags/bz.svg" alt="Belize" title="Belize" width="36" height="24"></li>
+            <li><img src="img/flags/gt.svg" alt="Guatemala" title="Guatemala" width="36" height="24"></li>
+          </ul>
+
+          <ul class="hero__links">
+            <li><a href="https://www.linkedin.com/in/jen-fu-huang-b87208310/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li>Email: <a href="mailto:huangfrank501@gmail.com">huangfrank501@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <!-- Portrait. No loading="lazy" here: it is the first thing people see. -->
+        <figure class="hero__photo">
+          <img src="img/profile/profile.jpg" alt="Portrait of Jen-Fu Huang" width="1365" height="1366" fetchpriority="high">
+        </figure>
+      </section>
+    </div>
+
+    <!-- ===== Resume: a grid of panels ===== -->
+    <section class="resume" id="resume" aria-labelledby="resume-title">
+      <h2 class="section-title" id="resume-title">Resume</h2>
+
+      <div class="resume-grid">
+
+        <!-- Education: TABLE (requirement 7) -->
+        <div class="resume-block">
+          <h3>Education</h3>
+          <div class="table-wrap">
+            <table>
+              <caption class="sr-only">Education at National Taiwan University</caption>
+              <tbody>
+                <tr><th scope="row">Major</th><td>Department of Geography, National Taiwan University (senior, 4th year)</td></tr>
+                <tr><th scope="row">Minor</th><td>Forestry</td></tr>
+                <tr><th scope="row">Programs</th><td>Biodiversity program; Marine Science program</td></tr>
+                <tr><th scope="row">Standing</th><td>GPA 4.12, ranked 2/52</td></tr>
+                <tr><th scope="row">Honors</th><td>Dean's List three times (2024 fall, 2025 fall, 2026 spring)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Research: ORDERED LIST <ol> (requirement 6) -->
+        <div class="resume-block resume-block--mint">
+          <h3>Research</h3>
+          <ol class="research-list">
+            <li>
+              <span class="tag tag--project">Research project · 2026</span>
+              <strong>NSTC Undergraduate Research Project</strong>
+              <span class="research-list__desc">Governance of temporary storage sites for fisheries waste at fishing ports in eastern Taiwan.</span>
+            </li>
+            <li>
+              <span class="tag tag--project">Research project</span>
+              <strong>Biodiversa+ SKETCH</strong>
+              <span class="research-list__desc">Participant.</span>
+            </li>
+            <li>
+              <span class="tag tag--ra">Research assistant</span>
+              <strong>Department of Geography, "Geo-corner"</strong>
+            </li>
+            <li>
+              <span class="tag tag--ra">Research assistant</span>
+              <strong>IPCS Spatial Ecology Lab</strong>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Experience: a timeline that runs SIDEWAYS (scroll or drag it) -->
+        <div class="resume-block resume-block--sand resume-block--wide">
+          <h3>Leadership &amp; experience</h3>
+          <p class="timeline-hint">Scroll or drag sideways to see more →</p>
+          <!-- tabindex="0" lets keyboard users focus the box and scroll it with the arrow keys -->
+          <div class="timeline-scroll" id="timeline-scroll" tabindex="0" role="region" aria-label="Leadership and experience timeline, scrolls sideways">
+            <ul class="timeline">
+              <li>
+                <span class="timeline__when">2026–27</span>
+                <strong>President, NTU Climate Action Club</strong>
+                <br>Previously Activities Director.
+                <details>
+                  <summary>Club programs</summary>
+                  <ul>
+                    <li>Climate Professional Series (氣候職人誌)</li>
+                    <li>Cups Log Out Program (杯杯登出計畫, Campus Circular Cup Initiative) </li>
+                    <li>Beach cleanups</li>
+                    <li>Sustainability-night talks</li>
+                    <li>Sustainable-eating community</li>
+                    <li>Collaboration with the University of Hong Kong and Muffles' College (Belize), 陽明交通大學(NYCU), 東華大學(NTHU) </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <span class="timeline__when">2026</span>
+                <strong>MOFA Taiwanese Path Finder Flagship Program, "環保行動家"</strong>
+                <br>One-month internship at Orange Walk Town Council, Belize: environmental education, solid-waste management, and cultural exchange
+              </li>
+              <li>
+                <span class="timeline__when">2026 fall</span>
+                <strong>Student Representative, College of Science</strong>
+              </li>
+              <li>
+                <span class="timeline__when">2025</span>
+                <strong>Ocean Affairs Council Indonesia Marine-Debris Youth Delegation</strong>
+                <br>Youth representative; Think Bank exchanges in Jakarta.
+              </li>
+              <li>
+                <span class="timeline__when">2024-2025</span>
+                <strong>NTU Trail Action Club</strong>: vice president and teaching assistant
+                <br><strong>Geography Student Association</strong>: academic director
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Awards: small TABLE -->
+        <div class="resume-block">
+          <h3>Awards</h3>
+          <div class="table-wrap">
+            <table>
+              <caption class="sr-only">Awards and scholarships</caption>
+              <thead>
+                <tr><th scope="col">Year</th><th scope="col">Award</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>2026</td><td>S&amp;G Contest, first prize</td></tr>
+                <tr><td>2025</td><td>TSMC Biodiversity Scholarship (representing NTU Trail Action Club), NT$80,000 </td></tr>
+                <tr><td>2024–2026</td><td>Dean's List (three times)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="resume-block resume-block--mint">
+          <h3>Medium</h3>
+          <p class="blog-block__text">I write travel notes, reflections and reading notes on Medium.</p>
+          <a class="blog-block__link" href="https://medium.com/@frankhuang_20950" target="_blank" rel="noopener noreferrer">Read my Medium →</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>© 2026 Jen-Fu Huang · <a href="https://www.linkedin.com/in/jen-fu-huang-b87208310/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <script src="js/timeline.js"></script>
+</body>
+</html>

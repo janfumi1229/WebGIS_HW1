@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Placeholder for the profile portrait">
+  <!-- TODO: replace with profile.jpg (portrait, about 1000x1250) -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F5EFE3"/>
+      <stop offset="1" stop-color="#DDEBF2"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#sky)"/>
+  <path d="M0 1000 L0 820 L220 660 L380 800 L520 700 L800 880 L800 1000 Z" fill="#DEEFE4"/>
+  <circle cx="400" cy="360" r="110" fill="#B7D3E0"/>
+  <path d="M170 1000 C170 700 290 560 400 560 C510 560 630 700 630 1000 Z" fill="#B7D3E0"/>
+  <text x="400" y="940" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#72685E">Profile photo placeholder</text>
+</svg>

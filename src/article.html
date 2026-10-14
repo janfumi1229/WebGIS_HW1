@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FDFBF6">
+  <!-- js/article.js replaces this title with the real article title -->
+  <title>Article · Jen-Fu Huang</title>
+  <link rel="icon" href="img/brand/logo.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Noto+Serif+TC:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- EXTERNAL CSS (same stylesheet as every other page) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Top bar (identical on every page) ===== -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="img/brand/logo.png" alt="Jen-Fu Huang brand logo" width="40" height="40">
+        <span>Jen-Fu Huang</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <!-- An article belongs to "Articles", so that link is marked as current -->
+          <li><a href="articles.html" aria-current="true">Articles</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- js/article.js fills this box after it loads the article -->
+    <div id="article-root">
+      <p class="state-box" style="margin: 3rem 1rem;">Loading article…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>© 2026 Jen-Fu Huang · <a href="https://www.linkedin.com/in/jen-fu-huang-b87208310/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+      <p>Built with AI assistance; see my report for the disclosure.</p>
+    </div>
+  </footer>
+
+  <!-- marked turns Markdown text into HTML (CDN, pinned version) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="js/article.js"></script>
+</body>
+</html>

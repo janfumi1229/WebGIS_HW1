@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Light placeholder cover for a travel note">
+  <!-- TODO: replace with a real photo, e.g. img/articles/<id>/cover.jpg -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E4F0F5"/>
+      <stop offset="1" stop-color="#F5EFE3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1200" cy="260" r="90" fill="#F6DFA0"/>
+  <path d="M0 900 L0 640 L260 420 L470 600 L700 380 L980 640 L1240 500 L1600 700 L1600 900 Z" fill="#CFE5D7"/>
+  <path d="M0 900 L0 760 L300 620 L560 760 L860 640 L1180 780 L1600 680 L1600 900 Z" fill="#B5D8C3"/>
+  <text x="800" y="860" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#72685E">Travel note cover placeholder</text>
+</svg>
